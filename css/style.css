@@ -90,6 +90,122 @@ margin-bottom: 0.5rem;
 
 }
 
+/* skills */
+.skills{
+    max-width: 1024px;
+    margin: 120px auto 0; 
+}
+
+.skill-list{
+margin-top: 60px;
+display: flex;
+gap:0 20px
+}
+.skill-item{
+
+}
+
+.skill-images{
+height: 180px;
+text-align: center;
+}
+
+.skill-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.skill-desc{
+margin-top: 1rem;
+}
+
+
+
+/* works */
+.works {
+max-width: 900px;
+margin: 120px auto 0;
+}
+
+.work-list{
+margin-top: 60px;
+}
+
+.work-item {
+ display: flex;
+ gap:0 50px;
+ margin-top: 45px;
+}
+
+.work-item.reverse
+{
+flex-direction: row-reverse;
+}
+
+.work-imges {
+    width: 50%;
+}
+
+.work-imges img {
+    width: 100%;
+}
+
+
+.work-text{
+margin-top: 2rem;
+width: 50%;
+}
+
+.work-title{
+
+}
+
+.work-skill{
+
+}
+
+.work-time{
+
+}
+
+.work-desc{
+    margin-top: 1rem;
+}
+
+/* contact */
+.contact{
+margin: 120px 0;
+text-align: center;
+}
+
+.contact-text{
+margin-top: 60px;
+}
+
+.contact-message{
+
+}
+
+.contact-mail{
+font-size: 2rem;
+font-weight: bold;
+}
+
+
+.icon-area{
+margin-top: 30px;
+
+}
+
+.icon-area i {
+font-size:2rem;
+margin: 0 1rem;
+}
+
+
 /* footer */
 .footer{
     background-color: #ddd;
