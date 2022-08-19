@@ -1,3 +1,39 @@
+/* 768px(スマホサイズの時)
+.test{
+    font-size: 20px;
+    height: 200px;
+    background-color: yellow;
+}
+
+@media screen and (min-width:768px) {
+/* 768px以上の時（タブレットサイズの時） */
+    /* .test {
+        font-size: 40px;
+        height: 400px;
+        background-color:greenyellow;
+    }
+    /* タブレットのサイズ 768-1024px */
+/* } */
+
+/* @media screen and (min-width:1025px) { */
+/* 1025px以上の時（PCサイズの時） */
+    /* .test {
+        font-size: 60px;
+        height: 600px;
+        background-color:green;
+    }
+} */ 
+
+html{
+    font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+html{
+    font-size: 16px;
+}
+
+}
+
 a{
     color: #333;
     text-decoration: none;
@@ -19,13 +55,10 @@ a{
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1024px;
     margin: 0 auto;
-    height: 80px;
-    
+    padding: 20px 16px;
+       
 }
 
 .header-log{
@@ -34,14 +67,60 @@ a{
 
 .header-list{
 display: flex;
+justify-content: space-between;
+margin-top: 1.5rem;
 }
 
 .header-item{
     /* 1rem=16px */
-margin-left: 2.6rem;
 font-size: 1.2rem;
 }
 
+@media screen and (min-width: 768px) {
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 0;
+    }
+    .header-list{
+        margin-top: 0;
+    }
+    .header-item{
+        margin-left: 2.5rem;
+    }
+}
+
+
+
+/* firstview */
+.firstview{
+    background-image:url(../image/hero.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+.firstview-message{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 100%;
+    letter-spacing: 0.3rem;
+}
+
+.firstview-message .blue{
+    color: #38d6ff;
+}
+
+@media screen and (min-width: 768px) {
+    .firstview-message {
+            font-size: 5.5rem;
+            letter-spacing: 0.5rem;
+        }
+}
 
 /* about */
 
