@@ -127,24 +127,21 @@ font-size: 1.2rem;
 .about{
     max-width: 800px;
     margin: 120px auto 0;
-
+    padding: 0 16px ;
 }
 
 
 
 .about-wrapper{
-    display: flex;
     margin-top: 60px;
-
 }
 
 .about-image{
-
+text-align: center;
 }
 
 .about-text{
-    margin-left: 80px;
-
+    margin-top: 40px;
 }
 
 .about-greeting{
@@ -169,17 +166,31 @@ margin-bottom: 0.5rem;
 
 }
 
+@media screen and (min-width: 768px) {
+    .about-wrapper {
+            display: flex;
+    
+        }
+    .about-text {
+    margin-left: 80px;
+    margin-top: 0;
+        }
+}
 /* skills */
 .skills{
     max-width: 1024px;
     margin: 120px auto 0; 
+    padding: 0 16px;
 }
 
 .skill-list{
 margin-top: 60px;
 display: flex;
-gap:0 20px
+justify-content:center;
+flex-wrap: wrap;
+gap:40px 20px;
 }
+
 .skill-item{
 
 }
@@ -201,7 +212,21 @@ text-align: center;
 margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+    .skill-item {
+        width: 230px;
+    }
+    .skill-list {
+            max-width: 500px;
+            margin: 60px auto 0;
+        }
+}
 
+@media screen and (min-width: 1024px) {
+    .skill-list {
+            max-width: 100%;
+        }
+}
 
 /* works */
 .works {
